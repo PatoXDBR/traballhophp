@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fundo claro */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Cor do texto */
+}
+
+.produtos {
+    display: grid; /* Usando grid para layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaçamento entre os produtos */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.produto {
+    background-color: white; /* Fundo branco para cada produto */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centralizando o texto */
+}
+
+.produto img {
+    max-width: 100%; /* Ajusta a imagem para caber no bloco */
+    height: auto; /* Mantém a proporção */
+}
+
+a.ver-carrinho, a.limpar, a.voltar {
+    display: inline-block; /* Exibir como bloco para espaçamento */
+    margin: 20px auto; /* Centralizando o botão */
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto no botão */
+}
+
+a.ver-carrinho:hover, a.limpar:hover, a.voltar:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* Estilizando a tabela do carrinho */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Borda leve */
+}
+
+.total {
+    font-weight: bold; /* Destaca o total */
+}
+
+/* O restante do CSS permanece igual */
